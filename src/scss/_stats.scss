@@ -10,54 +10,6 @@
         height: 95px;
     }
 }
-
-/* The numbers counter */
-@property --num1 {
-    syntax: "<integer>";
-    initial-value: 18;
-    inherits: false;
-}
-@property --num2 {
-    syntax: "<integer>";
-    initial-value: 245;
-    inherits: false;
-}
-@property --num3 {
-    syntax: "<integer>";
-    initial-value: 75;
-    inherits: false;
-}
-.award-no {
-    counter-reset: num1 var(--num1);
-}
-.book-no{
-    counter-reset: num2 var(--num2); 
-}
-.pen-no{
-    counter-reset: num3 var(--num3); 
-}
-.award-no::after {
-    content: counter(num1);
-}
-.book-no::after {
-    content: counter(num2);
-}
-.pen-no::after {
-    content: counter(num3);
-} 
-@keyframes counter {
-    from {
-      --num1: 0;
-      --num2: 0;
-      --num3: 0;
-    }
-    to {
-      --num1: 18;
-      --num2: 245;
-      --num3: 75;
-    }
-}
-
 @media (min-width: 992px) { 
     .stats{
         .single{

@@ -15,6 +15,19 @@ $(document).ready(function(){
         if ($(window).scrollTop() > oTopStats) {
             $('.single h3').each(function() {
                 $(this).css('animation', 'counter 5s ease-in-out');
+                let $this = $(this), countTo = $this.attr('data-count');
+                $({countNum: $this.text()}).animate({countNum: countTo}, 
+                    {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                        }
+                    }
+                );
             });
         }
         // free trail up animation
