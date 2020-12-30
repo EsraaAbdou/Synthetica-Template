@@ -1,4 +1,7 @@
 .articles{
+    .card{
+        background-color: transparent;
+    }
     .article-font{
         font-size: 0.5em;
         i{
@@ -7,7 +10,6 @@
     }
     img{
         height: $article-img-h;
-        // min-height: 180px;
         object-fit: cover;
     }    
     .article-link:hover {
@@ -39,7 +41,7 @@
         padding: 0.1rem 0.2rem;
         position: absolute;
         top: calc(#{$article-img-h} - 6%);
-        left: 25px;
+        left: 10px;
         visibility: hidden;
     }
     .featured {
