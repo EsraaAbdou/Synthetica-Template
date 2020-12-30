@@ -1,0 +1,13 @@
+.freebies{
+    hr{
+        background-color: $white;
+    }
+    .free-col:hover {
+        img, .img-overlay {
+        opacity: 1;
+        }
+    }
+}
+.free-col{
+   opacity: 0; 
+}

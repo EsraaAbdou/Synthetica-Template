@@ -1,0 +1,11 @@
+.bg-geo{
+    background: $secondary url('../images/geo.png');
+    .btn.btn-outline-secondary{
+        border-color: $white;
+        color: $white;
+        &:hover{
+            background-color: $white;
+            color: $secondary;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.crew{
+    .crew-pic {
+        img{
+        display: block;
+        height: 100%;
+        }
+        .overlay {
+            bottom: 0; 
+            background: rgba(102, 224, 229, 0.5);
+            opacity:0;
+            transition: .5s ease;
+            font-size: 20px;
+            .overlay-content{
+                padding: 0 5px;
+                box-sizing: border-box;
+                p{
+                    font-size: 0.7em;
+                }
+            }
+        }
+        &:hover .overlay{
+            opacity: 1;
+        }
+    }
+    .bars{
+        height: 10px;
+    }
+    .per-bar {
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }   
+    i{
+        font-size: 1.3em;
+    } 
+}
+@keyframes bars0 {
+    from {width: 0}
+    to {width: 90%}
+}  
+@keyframes bars1 {
+    from {width: 0}
+    to {width: 80%}
+}  
+@keyframes bars2 {
+    from {width: 0}
+    to {width: 95%}
+}  
+@keyframes bars3 {
+    from {width: 0}
+    to {width: 85%}
+}  

@@ -1,0 +1,56 @@
+header {
+    background-image: url('../images/intro.jpg');
+    @extend %bg;
+    nav{
+        height: 100px;
+        li{
+            border-right: 1px solid $white;
+            letter-spacing: 0.15em;
+        }
+    }
+    .head-content{
+        height: calc(100vh - 100px);
+        h1, button, hr,p{
+            opacity: 0;
+            position: relative;
+        }
+        button, hr,p{
+            top:50px;
+        }
+        h1{
+            top: 200px
+        }
+    }
+    .navbar-dark .navbar-nav > li > a{
+        border-bottom: 2px solid transparent;
+        &:hover, &:focus{
+            color: $secondary!important;
+            border-bottom-color: $secondary;
+        }
+    }
+    .navbar-toggler{
+        padding: 0.25rem 0.4rem;
+        font-size: 0.5rem;
+    }
+    .modal-body{
+        background-color: #414A52!important;
+    }
+}
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 992px) { 
+    .w-lg-33{
+        width: 33%!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .w-xl-50{
+        width: 50%!important;
+    }
+}
+
